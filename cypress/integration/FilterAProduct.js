@@ -1,7 +1,7 @@
 /// <reference types ="cypress" /> 
 
 describe("Test filter the product", function(){
-    it('TC10 Filter the black products',function(){
+    it('TC10 GIVEN filter, WHEN selected black and clicked "apply" THEN filter only black products',function(){
     cy.visit('http://localhost/')
     cy.get('#login > a').click()
     cy.wait(500)

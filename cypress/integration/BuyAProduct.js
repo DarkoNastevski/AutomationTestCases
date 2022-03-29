@@ -2,7 +2,7 @@
 describe("Test Buy a product ", function(){
 
 
-    it('TC10 unseccessfully buy a product',function(){
+    it('TC10 GIVEN option to pay WHEN no payment method inserted THEN return "Could not place order. Missing shipping or payment information" ',function(){
        cy.visit('http://localhost/')
        cy.get('#login > a').click()
        cy.wait(500)
